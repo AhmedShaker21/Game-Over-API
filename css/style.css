@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nerko One', cursive;
+    background-image: url('../img/bg.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-animation: slidIn 5s;
+    animation: slidIn 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+
+    animation-direction: alternate;
+}
+
+nav {
+    background-color: transparent;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    margin-top: 3rem !important;
+
+    .navbar-nav .nav-item {
+        color: #490909;
+    }
+
+    -webkit-transition: background-color 2s,
+    rotate 2s;
+    -o-transition: background-color 2s,
+    rotate 2s;
+    transition: background-color 2s,
+    rotate 2s;
+}
+
+nav:hover {
+    background-color: #490909;
+    rotate: 1deg;
+
+    .nav-item .nav-link {
+        color: #f0eeee;
+    }
+
+    .nav-item .nav-link.active {
+        color: #09c;
+    }
+
+    .navbar-brand {
+        color: white;
+    }
+
+    .navbar-brand {
+        color: white !important;
+    }
+}
+
+.navbar-brand {
+    color: rgb(37, 36, 36) !important;
+}
+
+.logo h5 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400px;
+}
+
+.nav-item .nav-link {
+    color: #310707;
+    font-weight: bold;
+    line-height: 18.375px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    width: 70%;
+}
+
+.nav-item .nav-link:hover {
+    color: #0D86B9 !important;
+}
+
+.nav-item .nav-link.active {
+    color: #09c !important;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.card h3 {
+    line-height: 16.8px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card button {
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+
+.card-footer span {
+    background-color: #ff2b01;
+    border-radius: 10px;
+    line-height: 10.5px;
+    font-weight: 700px;
+    font-size: 10.5px;
+}
+
+.card-footer {
+    border-top: 1px solid rgba(255, 0, 0, 0.175);
+}
+
+.card .game-details {
+    height: 80px;
+    color: #ff0000;
+    line-height: 21px;
+    font-size: 22px;
+}
+
+.gameDetails {
+    position: absolute;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.gameDetails .btn {
+    margin-bottom: 100px;
+}
+
+.img.vh-100 {
+    height: auto !important;
+    margin-bottom: 15px;
+}
+
+.card {
+    -webkit-filter: grayscale(0.7);
+    filter: grayscale(0.7);
+    -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.5s 0.1s;
+    transition: -webkit-transform 0.5s, -webkit-filter 0.5s 0.1s;
+    -o-transition: transform 0.5s, filter 0.5s 0.1s;
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    transition: transform 0.5s, filter 0.5s 0.1s, -webkit-transform 0.5s, -webkit-filter 0.5s 0.1s;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.gameDetails h2 {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 500px;
+}
+
+.gameDetails p {
+    color: rgb(12, 11, 11);
+
+}
+
+.gameDetails span {
+    color: #ffffff;
+    background-color: #f00d0d;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+
+.game-info .btn {
+    color: white;
+    border: 1px solid #FFC107;
+    font-size: 20px;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+
+.game-info .btn :hover {
+    background-color: #FFC107;
+}
+
+#gamesData {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 32%;
+}
+
+@media (max-width: 991px) {
+    .card {
+        width: 48%;
+    }
+
+    ;
+
+    .gameDetails .img {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 668px) {
+    .card {
+        width: 80%;
+    }
+
+    #gamesData {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes slidIn {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidIn {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
